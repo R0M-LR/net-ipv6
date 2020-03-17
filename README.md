@@ -8,7 +8,7 @@ Quick start with IPv6 -> Under construction
 ```
 
 ### On your FREEBOX, precision ###    
-Local link IPV6 address is -> your gateway
+Local link IPV6 address is -> your gateway   
 You have 8 subnets with /64
 
 ### In your browser ###   
