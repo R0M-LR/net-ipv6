@@ -70,3 +70,13 @@ $IP6T -t filter -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 $IP6T -t filter -A INPUT -p tcp --dport 53 -j ACCEPT
 $IP6T -t filter -A INPUT -p udp --dport 53 -j ACCEPT
 ```
+
+Apply   
+```bash
+ip6tables-apply
+```
+Save   
+```bash
+ip6tables-save > /etc/iptables/rules.v6
+```
+
