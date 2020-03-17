@@ -1,10 +1,23 @@
 # IPv6 survival kit
 Quick start with IPv6 -> Under construction
 
-### DNS Google V6 ###
+### DNS IPV6 ###
+Google   
 ```conf
 2001:4860:4860::8888
 2001:4860:4860::8844
+```
+
+Cloudflare    
+```conf
+2606:4700:4700::1111
+2606:4700:4700::1001
+```
+
+Quad9    
+```conf
+2606:fe::fe
+2606:fe::10
 ```
 
 ### On your FREEBOX, precision ###    
