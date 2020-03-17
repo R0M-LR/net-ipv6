@@ -79,4 +79,21 @@ Save
 ```bash
 ip6tables-save > /etc/iptables/rules.v6
 ```
+At boot   
+```bash
+nano /etc/network/if-pre-up.d/ip6tables
+```
+Add this script   
+```bash
+#!/bin/bash
+/sbin/ip6tables-restore < /etc/iptables/rules.v6
+```
+Make it executable   
+```bash
+chmod +x /etc/network/if-pre-up.d/ip6tables
+```
 
+To check after reboot   
+```bash
+ip6tables -nvL
+```
