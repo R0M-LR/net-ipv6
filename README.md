@@ -32,3 +32,5 @@ To check your ip address :
 ```bash
 ip -6 a
 ```
+
+### iptables v6 ###
