@@ -1,5 +1,5 @@
 # IPv6 survival kit
-Quick start with IPv6
+Quick start with IPv6 -> Under construction
 
 ### DNS Google V6 ###
 ```conf
@@ -17,7 +17,18 @@ Example to access on your synology with only IPv6 and port.
 https://[XXXX::XXX:bce0::2805:4e1d]:5001
 ```
 
+### Command in Linux ###
 Ping to google from IPv6
 ```bash
 ping -6 ipv6.google.com
+```
+
+To check your route :   
+```bash
+ip -6 r
+```
+
+To check your ip address :   
+```bash
+ip -6 a
 ```
