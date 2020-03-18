@@ -20,10 +20,6 @@ Quad9
 2606:fe::10
 ```
 
-### On your FREEBOX, precision ###    
-Local link IPV6 address is -> your gateway   
-You have 8 subnets with /64
-
 ### In your browser ###   
 Example to access on your synology with only IPv6 and port.   
 ```conf
