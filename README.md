@@ -30,7 +30,7 @@ Example to access on your synology with only IPv6 and port.
 https://[XXXX::XXX:bce0::2805:4e1d]:5001
 ```
 
-### Command in Linux ###
+### Command on Linux ###
 Ping to google from IPv6
 ```bash
 ping -6 ipv6.google.com
