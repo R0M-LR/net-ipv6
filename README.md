@@ -69,6 +69,10 @@ $IP6T -t filter -A INPUT -p tcp --dport 53 -j ACCEPT
 $IP6T -t filter -A INPUT -p udp --dport 53 -j ACCEPT
 ```
 
+Install iptables-persistent   
+```bash
+apt-get install iptables-persistent
+```
 Apply   
 ```bash
 ip6tables-apply
