@@ -77,7 +77,7 @@ ip6tables-save > /etc/iptables/rules.v6
 ```
 At boot   
 ```bash
-nano /etc/network/if-pre-up.d/ip6tables
+nano /etc/network/if-up.d/ip6tables
 ```
 Add this script   
 ```bash
