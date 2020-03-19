@@ -60,6 +60,13 @@ $IP6T -t filter -P OUTPUT ACCEPT
 # Loopback
 $IP6T -t filter -A INPUT -i lo -j ACCEPT
 $IP6T -t filter -A OUTPUT -o lo -j ACCEPT
+## Drop all scan XMAS et NULL.
+$IP6T -t filter -A INPUT -p tcp --tcp-flags FIN,URG,PSH FIN,URG,PSH -j DROP
+$IP6T -t filter -A INPUT -p tcp --tcp-flags ALL ALL -j DROP
+$IP6T -t filter -A INPUT -p tcp --tcp-flags ALL NONE -j DROP
+$IP6T -t filter -A INPUT -p tcp --tcp-flags SYN,RST SYN,RST -j DROP
+## Drop broadcast packet.
+$IP6T -t filter -A INPUT -m pkttype --pkt-type broadcast -j DROP
 # Allow an open connection to receive incoming traffic
 $IP6T -t filter -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 # Allow PING
