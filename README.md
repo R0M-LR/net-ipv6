@@ -62,6 +62,8 @@ $IP6T -t filter -A INPUT -i lo -j ACCEPT
 $IP6T -t filter -A OUTPUT -o lo -j ACCEPT
 # Allow an open connection to receive incoming traffic
 $IP6T -t filter -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+# Allow PING
+$IP6T -I INPUT 2 -p icmpv6 -j ACCEPT
 # DNS:53
 $IP6T -t filter -A INPUT -p tcp --dport 53 -j ACCEPT
 $IP6T -t filter -A INPUT -p udp --dport 53 -j ACCEPT
