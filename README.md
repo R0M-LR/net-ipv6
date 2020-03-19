@@ -95,3 +95,6 @@ To check after reboot
 ```bash
 ip6tables -nvL
 ```
+
+
+Fail2ban V6 ?
