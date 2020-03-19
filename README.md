@@ -73,10 +73,6 @@ Install iptables-persistent
 ```bash
 apt-get install iptables-persistent
 ```
-Apply   
-```bash
-ip6tables-apply
-```
 Save   
 ```bash
 ip6tables-save > /etc/iptables/rules.v6
