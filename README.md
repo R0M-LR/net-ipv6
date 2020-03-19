@@ -81,12 +81,12 @@ nano /etc/network/if-pre-up.d/ip6tables
 ```
 Add this script   
 ```bash
-#!/bin/bash
+#!/bin/sh
 /sbin/ip6tables-restore < /etc/iptables/rules.v6
 ```
 Make it executable   
 ```bash
-chmod +x /etc/network/if-pre-up.d/ip6tables
+chmod +x /etc/network/if-up.d/ip6tables
 ```
 
 To check after reboot   
